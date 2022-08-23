@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background: linear-gradient(180deg, #f5422a86 0%, #08fd006e 100%);
+    --color-primary:#667eea;
+    --color-secondare:#764ba2;
+    --boton-padding:20px 40px ;
+    --boton-titulos:rgb(197, 46, 46);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 80px 0;
+    max-width: 1200px;
+}
+
+.subtitulo{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+.caveza{
+    height: 100vh;
+    background-image: var(--background), url(img/shubham-dhage-jEHmIfOuhpU-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.caveza .contenedor{
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.nav--vace{
+    font-weight: 300;
+    justify-content: flex-end;
+}
+
+.nav-item{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    font-weight: inherit;
+    box-shadow: 5px 5px 10px -3px black, -5px -5px 15px 3px #00ffc11f;
+    background-color: rgba(128, 128, 128, 0.425);
+    border-radius: 35px;
+}
+
+.nav-items--cta{
+    border: 2px solid white;
+    box-shadow: none;
+    border-radius: none ;
+}
+
+
+.nav-items--footer{
+    padding: 10px;
+}
+
+
+
+
+.boton{
+    height: 10vh;
+    width: 20vw;
+    background-color: #ff050593;
+    outline: none;
+    border: none;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1vh;
+    text-decoration: none;
+    color: bisque;
+    margin-left: 40%;
+    
+    
+}
+
+.boton:hover{
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    letter-spacing: 3px;
+    font-size: 20px;
+   
+}
+
+
+/* .boton{
+    display: inline-block;
+    background-color: white;
+    padding: var(--boton-padding);
+    text-decoration: none;
+    border-radius: 35px;
+} */
+
+.sec{
+    display: flex;
+    height: calc(100vh - 70px);
+    align-items: center;
+    color: cornsilk;
+}
+
+.sec_1{
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.titulo{  
+    text-align: center ;    
+    color:darkgray;
+}
+
+.titulo1{
+    font-size: 3.2rem;
+    margin: 30px;
+    text-align: center;
+}
+
+.titulo2{
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 30px;
+}
+
+.titulo3{
+    text-align: center;
+
+}
+/* segunda vace*/
+
+.presentacion{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.img1{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin: 14px 14px;
+    object-fit: cover;
+}
+
+.img{
+    width: 150px;
+    height: 150px;
+    /* object-fit: cover; */
+    margin: 14px 14px;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    transition: .5s;
+}
+
+.img:hover{
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.bot{
+    display: inline-block;
+    padding: var(--boton-padding);
+    background: var(--color-primary);
+    text-decoration: none;
+    color: white;
+    border-radius: 35px;
+    margin-top: 39px;
+}
+
+.parrafo{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* bloque 2 */
+
+.sip{
+    margin-top: 30px;
+    background-color: #f2f2f2;
+
+}
+
+.colupna{  
+    display:grid;
+    height: auto;
+    grid-template-areas: 
+    "bloc1 bloc2 bloc3";
+    gap: 150px;
+    margin: 90px;
+}
+
+
+.text{
+    color: rgb(88, 80, 80);
+    text-decoration: none;
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--color-primary);
+}
+
+.footer__grid{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer__title{
+    font-weight: 400;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer_icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav__items--footer{
+    padding: 10px;
+}

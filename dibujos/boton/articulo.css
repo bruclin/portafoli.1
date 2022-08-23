@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+button{
+    height: 10vh;
+    width: 20vw;
+    background-color: orange;
+    outline: none;
+    border: none;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transition: .5s;
+
+}
+
+button:hover{
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    letter-spacing: 3px;
+    font-size: 20px;
+   
+
+}
